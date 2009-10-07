@@ -27,10 +27,11 @@ alias gba='git branch -a'
 
 alias history='fc -l 1'
 
-alias ls='ls -F'
-alias ll='ls -alr'
-alias l='ls'
-alias ll='ls -l'
+alias ls='ls -GF'
+alias ll='ls -alrG'
+alias la='ls -aG'
+alias l='ls -G'
+alias ll='ls -lG'
 alias sl=ls # often screw this up
 
 alias sgem='sudo gem'
