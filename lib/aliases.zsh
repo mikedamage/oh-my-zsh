@@ -34,6 +34,7 @@ alias l='ls -G'
 alias ll='ls -lG'
 alias sl=ls # often screw this up
 alias lsd='ls -d'
+alias lsfiles='lsd *(.)' # Filter out directories
 
 alias sgem='sudo gem'
 
