@@ -23,6 +23,6 @@ function fox() {
 }
 
 # Previews the specified file in QuickLook
-function quicklook() {
+function ql() {
 	qlmanage -p $1
 }
