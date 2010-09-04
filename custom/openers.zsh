@@ -22,6 +22,15 @@ function fox() {
 	fi
 }
 
+# Opens specified files or URLs in Google Chrome
+function chrome() {
+	if (( $# < 1 )); then
+		echo "Please supply at least one file or URL to open"
+	else
+		open -a /Applications/Google\ Chrome.app $*
+	fi
+}
+
 # Previews the specified file in QuickLook
 function ql() {
 	qlmanage -p $1
