@@ -35,3 +35,6 @@ function chrome() {
 function ql() {
 	qlmanage -p $1
 }
+
+# Shortcut for MacVim
+alias mvm="mvim"
