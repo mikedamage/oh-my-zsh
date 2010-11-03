@@ -13,3 +13,12 @@ alias rezsh="source ~/.zshrc"
 
 # Google Apps Manager
 alias gam="python $HOME/GoogleAppsManager/gam.py"
+
+# Set Global Font Smoothing Level
+function font-smooth() {
+	defaults -currentHost write -globalDomain AppleFontSmoothing -int $1
+}
+
+function get-font-smooth() {
+	defaults -currentHost read -globalDomain AppleFontSmoothing
+}
