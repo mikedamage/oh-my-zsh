@@ -14,6 +14,7 @@ alias rezsh="source ~/.zshrc"
 # Google Apps Manager
 alias gam="python $HOME/GoogleAppsManager/gam.py"
 
+
 # Set Global Font Smoothing Level
 function font-smooth() {
 	defaults -currentHost write -globalDomain AppleFontSmoothing -int $1
@@ -21,4 +22,9 @@ function font-smooth() {
 
 function get-font-smooth() {
 	defaults -currentHost read -globalDomain AppleFontSmoothing
+}
+
+# Kill Adobe Updater, get rid of that annoying menu bar icon
+function kill-adobe() {
+	sudo kill $(ps -A | grep AAM | head -n1 | awk '{print $1};')
 }
