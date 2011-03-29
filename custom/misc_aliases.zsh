@@ -14,6 +14,11 @@ alias rezsh="source ~/.zshrc"
 # Google Apps Manager
 alias gam="python $HOME/GoogleAppsManager/gam.py"
 
+# HexFiend GUI Hex Editor
+alias hexfiend="open -a /Applications/Hex\ Fiend.app"
+
+# Start PostgreSQL server
+alias startpostgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
 # Set Global Font Smoothing Level
 function font-smooth() {
