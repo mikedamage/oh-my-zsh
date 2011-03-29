@@ -42,3 +42,4 @@ alias monit_status="sudo monit status | less"
 
 # Editor Ruby file in TextMate
 alias mr='mate CHANGELOG app config db lib public script spec test'
+alias x=extract

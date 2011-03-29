@@ -8,3 +8,5 @@ projects.zsh
 .*.swp
 *.swp
 cache
+custom/*
+!custom/example.zsh
