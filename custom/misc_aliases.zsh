@@ -20,6 +20,9 @@ alias hexfiend="open -a /Applications/Hex\ Fiend.app"
 # Start PostgreSQL server
 alias startpostgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
+# Get external IP address
+alias external_ip="wget www.whatismyip.com/automation/n09230945.asp -O - -o /dev/null"
+
 # Set Global Font Smoothing Level
 function font-smooth() {
 	defaults -currentHost write -globalDomain AppleFontSmoothing -int $1
