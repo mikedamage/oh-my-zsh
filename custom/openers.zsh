@@ -38,3 +38,6 @@ function ql() {
 
 # Shortcut for MacVim
 alias mvm="mvim"
+
+# Open in Gedit
+alias gedit="open -a /Applications/gedit.app"
