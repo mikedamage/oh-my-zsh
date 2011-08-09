@@ -8,7 +8,7 @@
 
 
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
-    PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)] [%{$fg[yellow]%}%h%{$reset_color%}] [%{$fg[red]%}%*%{$reset_color%}]
+    PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)] [%{$fg[yellow]%}%h%{$reset_color%}]
 %# '
 
     ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
@@ -28,7 +28,7 @@ if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
     ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
 else
-    PROMPT='[%n@%m:%~$(git_prompt_info)]-[history: %h]-[time: %*]
+    PROMPT='[%n@%m:%~$(git_prompt_info)]-[history: %h]
 %# '
 
     ZSH_THEME_GIT_PROMPT_PREFIX=" on"
