@@ -23,6 +23,9 @@ alias startpostgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgre
 # Get external IP address
 alias external_ip="wget www.whatismyip.com/automation/n09230945.asp -O - -o /dev/null"
 
+# Bundle exec shortcut
+alias bex="bundle exec"
+
 # Set Global Font Smoothing Level
 function font-smooth() {
 	defaults -currentHost write -globalDomain AppleFontSmoothing -int $1
