@@ -20,6 +20,9 @@ alias hexfiend="open -a /Applications/Hex\ Fiend.app"
 # Start PostgreSQL server
 alias startpostgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
+# Stop PostgreSQL server
+alias stoppostgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
 # Get external IP address
 alias external_ip="wget www.whatismyip.com/automation/n09230945.asp -O - -o /dev/null"
 
