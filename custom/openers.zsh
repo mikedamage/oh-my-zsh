@@ -41,3 +41,12 @@ alias mvm="mvim"
 
 # Open in Gedit
 alias gedit="open -a /Applications/gedit.app"
+
+# File-type aliases.
+# Example: alias -s tex=vim # typing foo.tex will open that file in vim
+vim_exts=(php tex yml conf txt hs textile md ru)
+for ext in $vim_exts; do
+	alias -s "$ext"=vim
+done
+
+alias -s html=chrome
