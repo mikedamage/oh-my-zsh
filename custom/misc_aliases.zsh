@@ -42,3 +42,8 @@ function get-font-smooth() {
 function kill-adobe() {
 	sudo kill $(ps -A | grep AAM | head -n1 | awk '{print $1};')
 }
+
+# Global Aliases (can be used anywhere in a command)
+alias -g C="| wc -l"
+alias -g ELS="|& less -S"
+alias -g ETL="|& tail -20"
