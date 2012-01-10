@@ -17,11 +17,11 @@ eval PR_BOLD="%{$terminfo[bold]%}"
 if [[ $UID -ge 500 ]]; then # normal users on OS X start at 501
   eval PR_USER='${PR_GREEN}%n${PR_NO_COLOR}'
   eval PR_USER_OP='${PR_GREEN}%#${PR_NO_COLOR}'
-  local PR_PROMPT='$PR_NO_COLOR➤ $PR_NO_COLOR'
+  local PR_PROMPT='$PR_NO_COLOR⟴ $PR_NO_COLOR'
 elif [[ $UID -eq 0 ]]; then # root
   eval PR_USER='${PR_RED}%n${PR_NO_COLOR}'
   eval PR_USER_OP='${PR_RED}%#${PR_NO_COLOR}'
-  local PR_PROMPT='$PR_RED➤ $PR_NO_COLOR'
+  local PR_PROMPT='$PR_RED⟴ $PR_NO_COLOR'
 fi
 
 # Check if we are on SSH or not
@@ -33,8 +33,8 @@ fi
 
 local return_code="%(?..%{$PR_RED%}%? ↵%{$PR_NO_COLOR%})"
 
-local history_num='(${PR_MAGENTA}%h${PR_NO_COLOR})'
-local user_host='${PR_USER}${PR_CYAN}@${PR_HOST}'
+local history_num='❲${PR_MAGENTA}%h${PR_NO_COLOR}❳'
+local user_host='❲${PR_USER}${PR_CYAN}@${PR_HOST}❳'
 local current_dir='%{$PR_BOLD$PR_BLUE%}%~%{$PR_NO_COLOR%}'
 local rvm_ruby=''
 if which rvm-prompt &> /dev/null; then

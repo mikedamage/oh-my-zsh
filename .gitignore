@@ -7,5 +7,6 @@ projects.zsh
 .*.swp
 *.swp
 cache
+cache/*
 custom/*
 !custom/example.zsh
