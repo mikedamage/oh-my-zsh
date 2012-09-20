@@ -10,3 +10,5 @@ cache
 cache/*
 custom/*
 !custom/example.zsh
+!custom/example.zshcache
+cache/
