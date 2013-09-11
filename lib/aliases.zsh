@@ -21,7 +21,8 @@ alias la='ls -aG'
 alias ll='ls -lG'
 
 # List direcory contents
-alias l='ls -lA1'
+alias lsa='ls -lah'
+alias l='ls -la'
 alias ll='ls -l'
 alias la='ls -lA'
 alias sl=ls # often screw this up
